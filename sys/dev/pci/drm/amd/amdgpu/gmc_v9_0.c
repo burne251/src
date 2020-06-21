@@ -301,6 +301,9 @@ static int gmc_v9_0_process_interrupt(struct amdgpu_device *adev,
 				struct amdgpu_irq_src *source,
 				struct amdgpu_iv_entry *entry)
 {
+	STUB();
+	return 1;
+#if 0
 	struct amdgpu_vmhub *hub;
 	bool retry_fault = !!(entry->src_data[1] & 0x80);
 	uint32_t status = 0;
@@ -382,6 +385,7 @@ static int gmc_v9_0_process_interrupt(struct amdgpu_device *adev,
 	}
 
 	return 0;
+#endif
 }
 
 static const struct amdgpu_irq_src_funcs gmc_v9_0_irq_funcs = {

@@ -729,7 +729,7 @@ static void kv_start_dpm(struct amdgpu_device *adev)
 	tmp |= GENERAL_PWRMGT__GLOBAL_PWRMGT_EN_MASK;
 	WREG32_SMC(ixGENERAL_PWRMGT, tmp);
 
-	amdgpu_kv_smc_dpm_enable(adev, true);
+//	amdgpu_kv_smc_dpm_enable(adev, true);
 }
 
 static void kv_stop_dpm(struct amdgpu_device *adev)
